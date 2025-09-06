@@ -44,7 +44,7 @@ el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 
 
-function loadScratchComments()
+function loadScratchComments(){
   let comments = document.querySelector("#scratch-comments")
  
   //コメント取得
@@ -78,7 +78,7 @@ function loadScratchComments()
           //console.log(" >>>"+replyResponse[j].content)
           comment_arr.push(" >>>"+replyResponse[j].content)
       }
-  }
+  }}
 
   //console.log(comment_arr)
 
@@ -92,6 +92,7 @@ function loadScratchComments()
     }
 
 loadScratchComments()
+
 
 
 
