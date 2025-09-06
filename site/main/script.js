@@ -91,6 +91,7 @@ function loadScratchComments()
       comments.appendChild(comment_txt)
     }
 
+loadScratchComments()
 
 
 
