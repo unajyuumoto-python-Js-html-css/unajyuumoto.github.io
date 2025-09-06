@@ -78,7 +78,7 @@ function loadScratchComments(){
           //console.log(" >>>"+replyResponse[j].content)
           comment_arr.push(" >>>"+replyResponse[j].content)
       }
-  }}
+  }
 
   //console.log(comment_arr)
 
@@ -89,9 +89,10 @@ function loadScratchComments(){
       comment_txt.className = "comment"
 
       comments.appendChild(comment_txt)
-    }
+    }}
 
 loadScratchComments()
+
 
 
 
