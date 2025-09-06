@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unajyuumotoのサイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <div class="header" id="header">
+        <h1 class="site-title">unajyuumotoのサイト</h1>
+    </div>
+
+    <!-- メイン -->
+    <div class="main-content" id="main-content">
+        <p class="welcome-text">ようこそ！こちらはunajyuumotoのホームページです。</p>
+
+        <!-- ゲームページへのボタン -->
+        <a href="../game/game.html" class="game-button">unajyuumotoのゲームエリア</a>
+    </div>
+
+    <!-- お問い合わせ -->
+    <div class="contact-section" id="contact-section">
+        <h3 class="contact-title">お問い合わせ</h3>
+        <form class="contact-form" id="contact-form">
+            <label for="name" class="form-label">お名前: <span class="optional-text">(任意)</span></label>
+            <input type="text" id="name" class="form-input"><br><br>
+
+            <label for="email" class="form-label">メールアドレス: <span class="optional-text">(任意)</span></label>
+            <input type="email" id="email" class="form-input"><br><br>
+
+            <label for="message" class="form-label">メッセージ: <span class="required-text">(必須)</span></label><br>
+            <textarea id="message" class="form-textarea"></textarea><br><br>
+
+            <button type="submit" class="form-button" id="form-button">送信</button>
+        </form>
+    </div>
+
+
+
+
+
+<!-- フッター -->
+<div class="footer" id="footer">
+    <div class="footer-links">
+        <a href="index.html">ホーム</a>
+        <a href="../game/game.html">ゲームエリア</a>
+    </div>
+    <p class="credit">制作：unajyuumoto</p>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

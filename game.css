@@ -1,0 +1,125 @@
+/* ヘッダー */
+.header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2em;
+    color: #ff6600;
+}
+
+/* メイン */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* 目次ボックス */
+.game-toc {
+    background-color: #e0e0e0; /* 灰色のボックス */
+    padding: 20px 20px 20px 30px; /* 左側の余白を多めに */
+    margin-bottom: 30px;
+    text-align: left; /* 左寄せ */
+    border-radius: 5px;
+    border: 2px solid #a0a0a0; /* 2pxの濃い灰色の枠線 */
+}
+
+.game-toc li {
+    list-style-type: disc; /* 先頭に点（・） */
+    margin-bottom: 8px;
+    color: #000; /* 文字色は黒 */
+}
+
+.game-toc a {
+    color: inherit; /* リンク色を無視して文字色そのまま */
+    text-decoration: none;
+}
+
+.game-toc a:hover {
+    text-decoration: underline; /* ホバーで下線だけ */
+}
+
+
+
+/* ゲームセクション */
+.game-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.game-section h3 {
+    font-size: 1.4em;
+    margin-bottom: 16px;
+}
+
+/* フッター */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.credit {
+    margin: 0;
+}
+/* 上部ナビゲーションバー */
+.top-nav {
+    position: fixed;
+    top: -70px; /* 初期状態は完全に隠す */
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* visibleクラスで表示 */
+.top-nav.visible {
+    top: 0;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+/* フッター全体 */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* フッター内のリンク */
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* クレジットはリンクの下に表示 */
+.footer .credit {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #ccc;
+}

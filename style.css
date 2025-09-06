@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* ヘッダー */
+.header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2em;
+    color: #ff6600;
+}
+
+/* メイン */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 1.2em;
+}
+
+/* お問い合わせ */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #add8e6; /* 薄青 */
+    color: #ffffff; /* 白文字 */
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.form-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #e65c00;
+}
+
+/* フッター */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.credit {
+    margin: 0;
+}
+
+.required-text {
+    color: red;
+    font-weight: normal;
+    margin-left: 4px;
+    font-size: 0.9em;
+}
+
+.optional-text {
+    color: red;
+    font-weight: normal;
+    margin-left: 4px;
+    font-size: 0.9em;
+}
+
+/* フッター全体 */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* フッター内のリンク */
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* クレジットはリンクの下に表示 */
+.footer .credit {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #ccc;
+}
