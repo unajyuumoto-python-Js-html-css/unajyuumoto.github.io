@@ -42,22 +42,7 @@ el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 });
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
 
-    // 入力値を取得
-    const message = document.getElementById("message").value.trim();
-
-    // バリデーションチェック（メッセージのみ必須）
-    if (!message) {
-        alert("メッセージは必須です。");
-        return; // 未入力がある場合は送信しない
-    }
-
-    // 入力OKなら送信（デモ用アラート）
-    alert("お問い合わせを送信しました！");
-    document.getElementById("contact-form").reset();
-});
 
 async function loadScratchComments() {
   const url = "https://api.scratch.mit.edu/users/unajyuumoto/projects/798603664/comments?limit=40&offset=0";
@@ -82,5 +67,6 @@ async function loadScratchComments() {
 }
 
 loadScratchComments();
+
 
 
