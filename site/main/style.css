@@ -64,13 +64,22 @@ body {
     background-color: #e65c00;
 }
 
-/* フッター */
-.footer {
-    background-color: #222;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+/* クレジットエリア */
+.site-footer {
+  background-color: #333; /* 好きな色に変更可 */
+  color: white;
+  padding: 10px 20px;
+  text-align: left; /* 左寄せ */
 }
+.site-footer a {
+  color: white; /* リンクも白 */
+  text-decoration: none;
+  margin-right: 10px;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
 
 .credit {
     margin: 0;
@@ -130,6 +139,7 @@ body {
 .comment:last-child {
   border-bottom: none;
 }
+
 
 
 
