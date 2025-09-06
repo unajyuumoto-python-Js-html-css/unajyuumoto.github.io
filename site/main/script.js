@@ -44,29 +44,52 @@ el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 
 
-async function loadScratchComments() {
-  const url = "https://api.scratch.mit.edu/users/unajyuumoto/projects/798603664/comments?limit=40&offset=0";
-  const container = document.getElementById("scratch-comments");
+function loadScratchComments()
+  let comments = document.querySelector("#scratch-comments")
+ 
+  //コメント取得
+  let response = await fetch("https://api.scratch.mit.edu/users/unajyuumoto/projects/1213761580/comments?limit=40&offset=0")
+      .then(res => res.json())
 
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
 
-    container.innerHTML = ""; // 初期化
+  //for(let i of txt ){ ミスって作ったやつなんやで
+  //    console.log(i)
+  //}
 
-    data.forEach(comment => {
-      const div = document.createElement("div");
-      div.className = "comment";
-      div.innerHTML = `<strong>${comment.author.username}:</strong> ${comment.content}`;
-      container.appendChild(div);
-    });
-  } catch (err) {
-    console.error("コメント取得エラー:", err);
-    container.innerHTML = "<p>コメントの取得に失敗しました</p>";
+  let comment_id
+  let comment_arr = []
+
+  //コメントとりあえずコンソール出力（デバッグ時優秀
+  for(let i in response){
+      //console.log(response[i].content)
+      comment_arr.push(" >>>"+response[i].content)
+
+      comment_id = response[i].id
+
+      //console.log(comment_id)
+
+      let replyResponse = await fetch("https://api.scratch.mit.edu/users/unajyuumoto/projects/1213761580/comments/"+String(comment_id)+"/replies?limit=20&offset=0")
+      .then(res => res.json())
+      
+      //console.log("https://api.scratch.mit.edu/users/unajyuumoto/projects/1213761580/comments/"+String(comment_id)+"/replies?limit=20&offset=0")
+      //console.log(replyResponse)
+      
+      for(let j in replyResponse){
+          //console.log(" >>>"+replyResponse[j].content)
+          comment_arr.push(" >>>"+replyResponse[j].content)
+      }
   }
-}
 
-loadScratchComments();
+  //console.log(comment_arr)
+
+  for(i in comment_arr){
+      let comment_txt = document.createElement("div")
+      comment_txt.textContent = comment_arr[i]
+      
+      comment_txt.className = "comment"
+
+      comments.appendChild(comment_txt)
+    }
 
 
 
