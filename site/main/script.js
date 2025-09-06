@@ -59,3 +59,28 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     document.getElementById("contact-form").reset();
 });
 
+async function loadScratchComments() {
+  const url = "https://api.scratch.mit.edu/users/unajyuumoto/projects/798603664/comments?limit=40&offset=0";
+  const container = document.getElementById("scratch-comments");
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    container.innerHTML = ""; // 初期化
+
+    data.forEach(comment => {
+      const div = document.createElement("div");
+      div.className = "comment";
+      div.innerHTML = `<strong>${comment.author.username}:</strong> ${comment.content}`;
+      container.appendChild(div);
+    });
+  } catch (err) {
+    console.error("コメント取得エラー:", err);
+    container.innerHTML = "<p>コメントの取得に失敗しました</p>";
+  }
+}
+
+loadScratchComments();
+
+
