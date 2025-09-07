@@ -128,18 +128,9 @@ body {
 }
 
 #scratch-comments {
-  border: 1px solid #ccc;
   padding: 10px;
   max-width: 600px;
 }
-.comment {
-  border-bottom: 1px solid #eee;
-  padding: 5px 0;
-}
-.comment:last-child {
-  border-bottom: none;
-}
-
 
 
 
