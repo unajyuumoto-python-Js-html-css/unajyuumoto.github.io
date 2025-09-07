@@ -55,31 +55,12 @@
     margin-bottom: 16px;
 }
 
-/* フッター */
-.footer {
-    background-color: #222;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+
 
 .credit {
     margin: 0;
 }
-/* 上部ナビゲーションバー */
-.top-nav {
-    position: fixed;
-    top: -70px; /* 初期状態は完全に隠す */
-    left: 0;
-    width: 100%;
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    transition: top 0.3s ease-in-out;
-    z-index: 1000;
-}
+
 
 /* visibleクラスで表示 */
 .top-nav.visible {
@@ -106,7 +87,7 @@
 }
 
 /* フッター内のリンク */
-.footer-links a {
+.footer-links {
     color: #fff;
     text-decoration: none;
     margin-right: 15px;
@@ -123,3 +104,4 @@
     font-size: 13px;
     color: #ccc;
 }
+
