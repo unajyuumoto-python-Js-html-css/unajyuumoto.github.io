@@ -28,19 +28,6 @@ body {
     font-size: 1.2em;
 }
 
-/* お問い合わせ */
-.contact-section {
-    padding: 40px 20px;
-    background-color: #add8e6; /* 薄青 */
-    color: #ffffff; /* 白文字 */
-    text-align: center;
-}
-
-.contact-title {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
 .form-label {
     font-weight: bold;
 }
@@ -131,6 +118,7 @@ body {
   padding: 10px;
   max-width: 600px;
 }
+
 
 
 
